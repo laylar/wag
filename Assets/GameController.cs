@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		target = firsttarget;
+
 		for (int i = 1; i <= seedArray.Length; i++)
 		{
 			displayString += blankLetter;

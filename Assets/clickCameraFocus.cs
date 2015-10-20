@@ -48,6 +48,10 @@ public class clickCameraFocus : MonoBehaviour {
 			progressArray[i] = '^'; //This is hard coded and should eventually reference the GameController.blankLetter
 		}
 
+		if(this == controller.firsttarget)
+		{
+			gameCamera.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, gameCamera.transform.position.z);
+		}
 	}
 	
 	// Update is called once per frame
@@ -69,8 +73,16 @@ public class clickCameraFocus : MonoBehaviour {
 	}
 
 	void activateHeirs (){
+
 		for(int i = 0; i < heirArray.Length; i++){
-			heirArray[i].isActive = true;
+			if(heirArray[i].isActive != true){
+				heirArray[i].isActive = true;
+				GameObject heirLine = Instantiate(new GameObject(), this.transform.position,this.transform.rotation) as GameObject;
+				LineRenderer heirLineRenderer = heirLine.AddComponent<LineRenderer>();
+				heirLineRenderer.SetVertexCount(2);
+				heirLineRenderer.SetPosition(1, heirArray[i].transform.position);
+				heirLineRenderer.SetPosition(2, this.transform.position);
+			}
 		}
 	}
 }
