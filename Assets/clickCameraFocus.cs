@@ -86,6 +86,7 @@ public class clickCameraFocus : MonoBehaviour {
 				heirLineRenderer.SetVertexCount(2);
 				heirLineRenderer.SetPosition(1, heirArray[i].transform.position);
 				heirLineRenderer.SetPosition(2, this.transform.position);
+				heirLineRenderer.SetWidth(.25f, .25f);
 			}
 		}
 	}
