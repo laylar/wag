@@ -497,6 +497,8 @@ MonoBehaviour:
   isActive: 0
   progressArray: 5e005e005e005e00
   heirArray: []
+  c1: {r: 0, g: 0, b: 0, a: 1}
+  lineColor: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &1165344127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -668,6 +670,8 @@ MonoBehaviour:
   isActive: 0
   progressArray: 5e005e005e005e005e00
   heirArray: []
+  c1: {r: 0, g: 0, b: 0, a: 1}
+  lineColor: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &1702416499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -851,6 +855,8 @@ MonoBehaviour:
   - {fileID: 1871470479}
   - {fileID: 1702416498}
   - {fileID: 1165344126}
+  c1: {r: 0, g: 0, b: 0, a: 1}
+  lineColor: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1871470478
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +897,8 @@ MonoBehaviour:
   isActive: 0
   progressArray: 5e005e005e00
   heirArray: []
+  c1: {r: 0, g: 0, b: 0, a: 1}
+  lineColor: {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &1871470480
 BoxCollider:
   m_ObjectHideFlags: 0
