@@ -13,6 +13,8 @@ public class clickCameraFocus : MonoBehaviour {
 	public bool isActive;
 	public char[] progressArray;
 	public clickCameraFocus[] heirArray;
+	public Color c1 = Color.black;
+	public Material lineColor;
 
 	void OnMouseDown(){
 
@@ -79,6 +81,8 @@ public class clickCameraFocus : MonoBehaviour {
 				heirArray[i].isActive = true;
 				GameObject heirLine = Instantiate(new GameObject(), this.transform.position,this.transform.rotation) as GameObject;
 				LineRenderer heirLineRenderer = heirLine.AddComponent<LineRenderer>();
+				heirLineRenderer.material = lineColor;
+				heirLineRenderer.SetColors(c1, c1);
 				heirLineRenderer.SetVertexCount(2);
 				heirLineRenderer.SetPosition(1, heirArray[i].transform.position);
 				heirLineRenderer.SetPosition(2, this.transform.position);
