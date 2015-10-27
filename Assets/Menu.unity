@@ -258,7 +258,7 @@ GameObject:
   - 65: {fileID: 714249830}
   - 23: {fileID: 714249829}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: levelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +319,50 @@ Transform:
   m_Children:
   - {fileID: 1689156759}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
+--- !u!1 &971093536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 971093538}
+  - 114: {fileID: 971093537}
+  m_Layer: 0
+  m_Name: MenuController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &971093537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 971093536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22ac13a339bb3148ab952a7714cee14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuButtons:
+  - {fileID: 714249828}
+  - {fileID: 1253868674}
+  selectedButton: {fileID: 0}
+--- !u!4 &971093538
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 971093536}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7848649, y: .301821232, z: -.991534233}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
 --- !u!1 &1253868674
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +375,7 @@ GameObject:
   - 65: {fileID: 1253868677}
   - 23: {fileID: 1253868676}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: quitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -350,7 +393,7 @@ Transform:
   m_Children:
   - {fileID: 168676202}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!23 &1253868676
 MeshRenderer:
   m_ObjectHideFlags: 0
