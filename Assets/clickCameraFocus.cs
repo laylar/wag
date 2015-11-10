@@ -17,6 +17,7 @@ public class clickCameraFocus : MonoBehaviour {
 	public Material lineColor;
 	public float lineWidthStart = .25f;
 	public float lineWidthEnd = .25f;
+	public float lineShortenFactor = .2f;
 
 	void OnMouseDown(){
 
@@ -86,8 +87,8 @@ public class clickCameraFocus : MonoBehaviour {
 				heirLineRenderer.material = lineColor;
 				heirLineRenderer.SetColors(c1, c1);
 				heirLineRenderer.SetVertexCount(2);
-				heirLineRenderer.SetPosition(1, heirArray[i].transform.position );
-				heirLineRenderer.SetPosition(2, this.transform.position);
+				heirLineRenderer.SetPosition(1, heirArray[i].transform.position - lineShortenFactor*(heirArray[i].transform.position - this.transform.position));
+				heirLineRenderer.SetPosition(0, this.transform.position - lineShortenFactor*(this.transform.position - heirArray[i].transform.position));
 				heirLineRenderer.SetWidth(lineWidthStart, lineWidthEnd);
 			}
 		}
